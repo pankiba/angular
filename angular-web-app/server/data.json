@@ -1,0 +1,74 @@
+{
+  "employees": [
+    {
+      "employeeId": 333476,
+      "firstName": "Daenerys",
+      "lastName": "Stormborn",
+      "gender": "F",
+      "email": "daenerys.targaryen@users.noreply.github.com",
+      "birthDate": "11/30/1967",
+      "joiningDate": "12/21/1991",
+      "salary": 109394
+    },
+    {
+      "employeeId": 408351,
+      "firstName": "Cersei",
+      "lastName": "Lanister",
+      "gender": "F",
+      "email": "cersei.lanister@users.noreply.github.com",
+      "birthDate": "12/03/1977",
+      "joiningDate": "04/15/1999",
+      "salary": 180294
+    },
+    {
+      "employeeId": 499687,
+      "firstName": "Ethan",
+      "lastName": "Hunt",
+      "gender": "M",
+      "email": "ethan.hunt@yahoo.com",
+      "birthDate": "09/26/1982",
+      "joiningDate": "07/21/2005",
+      "salary": 72305
+    },
+    {
+      "employeeId": 528673,
+      "firstName": "Brann",
+      "lastName": "Stark",
+      "gender": "M",
+      "email": "brann.stark@users.noreply.github.com",
+      "birthDate": "03/08/1959",
+      "joiningDate": "06/25/1995",
+      "salary": 145235
+    },
+    {
+      "employeeId": 539712,
+      "firstName": "Jery",
+      "lastName": "Maguire",
+      "gender": "M",
+      "email": "jery.maguire@yahoo.com",
+      "birthDate": "06/08/1959",
+      "joiningDate": "04/26/1994",
+      "salary": 121587
+    },
+    {
+      "employeeId": 677509,
+      "firstName": "John",
+      "lastName": "Rambo",
+      "gender": "M",
+      "email": "john.rambo@users.noreply.github.com",
+      "birthDate": "03/28/1987",
+      "joiningDate": "11/23/2003",
+      "salary": 168251
+    },
+    {
+      "employeeId": 940761,
+      "firstName": "John",
+      "lastName": "McLane",
+      "gender": "M",
+      "email": "john.mclane@users.noreply.github.com",
+      "birthDate": "07/30/1970",
+      "joiningDate": "07/26/2008",
+      "salary": 51063
+    }
+  ]
+}

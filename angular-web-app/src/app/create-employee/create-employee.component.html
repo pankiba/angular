@@ -1,0 +1,32 @@
+<div class="container custom-container">
+    <div class="col-md-12">
+      <h3 class="mb-3 text-center">Create Employee</h3>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.employeeId" class="form-control" placeholder="employeeId">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.firstName" class="form-control" placeholder="firstName">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.lastName" class="form-control" placeholder="lastName">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.gender" class="form-control" placeholder="gender">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.email" class="form-control" placeholder="email">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.birthDate" class="form-control" placeholder="birthDate">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.joiningDate" class="form-control" placeholder="joiningDate">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="employeeDetails.salary" class="form-control" placeholder="salary">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" (click)="addEmployee()">Create Employee</button>
+      </div>
+    </div>
+  </div>

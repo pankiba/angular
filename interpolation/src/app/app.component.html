@@ -1,0 +1,71 @@
+<div class="container">
+  <h4>Property Evaluation with template expression</h4>
+  <span class="text-highlight"> {{ title }} </span>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>Invoke method from component :</h4>
+  <span class="text-highlight"> {{ getTitle() }} </span>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>Bind to an element property :</h4>
+  <p>Show me <span class="{{giveMeColor}}">red</span></p>
+  <p style.color={{giveMeColor}}>This is red</p>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>Template reference variable</h4>
+  <label>Enter Your Name </label>
+  <input (keyup)="0" #name>
+  <p><span class="text-highlight"> Welcome {{name.value}} </span></p>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>Cross-site Scripting or XSS</h4>
+  <span class="text-highlight">{{scriptTag}}</span>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>NgNonBindable</h4>
+  <span class="text-highlight">Evaluated expression : {{giveMeColor}}</span>
+  <p ngNonBindable>This will not be evaluated : {{giveMeColor}}</p>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>Usage in Pipes</h4>
+  <p>uppercase pipe: {{ title | uppercase }}</p>
+  <p>pipe chain: {{title | uppercase | lowercase }}
+  <p>Without JSON pipe:</p>
+  <pre>{{object}}</pre>
+  <p>With JSON pipe:</p>
+  <pre>{{object | json }}</pre>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>safe navigation operator ( ? )</h4>
+  <p>The person name is: {{person?.name}}</p>
+  <p>The person name is: {{personWithNullName?.name}}</p>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>non-null assertion operator ( ! )</h4>
+  <p>The person's name is: {{person!.name}}</p>
+  <p>The person's name is: {{personWithNullName!.name}}</p>
+</div>

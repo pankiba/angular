@@ -1,0 +1,56 @@
+<div class="container">
+    <h4 [innerText]="title"></h4>
+</div>
+
+<hr>
+
+<div class="container">
+    <h4> Component listens to the click event on the button and maintains click count</h4>
+    <button class="btn btn-primary" (click)="handleClick()">Click Me</button>
+    <p class=".text-highlight"> You have clicked <span class="text-highlight">{{ clickCount }}</span></p>
+</div>
+
+<hr>
+
+<div class="container">
+    <h4>$event Payload</h4>
+    <lablel>Please Enter </lablel>
+    <input (input)="handleInput($event)">
+    <p>You have entered <span class="text-highlight">{{ value }}</span></p>
+</div>
+
+<hr>
+
+<div class="container">
+    <h4>Template reference variable</h4>
+    <lablel>Please Enter </lablel>
+    <input #el (input)="handleInputOne(el)">
+    <p>You have entered <span class="text-highlight">{{ valueOne }}</span></p>
+</div>
+
+<hr>
+
+<div class="container">
+    <h4>Key event filtering </h4>
+    <lablel>Please Enter </lablel>
+    <input (keyup)="valueTwo= $any($event.target).value" />
+    <p>You have entered <span class="text-highlight">{{ valueTwo }}</span></p>
+</div>
+
+<hr>
+
+<div class="container">
+    <h4>Key event filtering (with key.enter)</h4>
+    <lablel>Please Enter </lablel>
+    <input (keyup.enter)="valueThree= $any($event.target).value" />
+    <p>You have entered <span class="text-highlight">{{ valueThree }}</span></p>
+</div>
+
+<hr>
+
+<div class="container">
+    <h4>Key event filtering (with key.enter and escape)</h4>
+    <lablel>Please Enter </lablel>
+    <input (keyup.enter)="valueFour= $any($event.target).value" (keyup.escape)="$any($event.target).value='';valueFour=''"/>
+    <p>You have entered <span class="text-highlight">{{ valueFour }}</span></p>
+</div>

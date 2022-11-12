@@ -1,0 +1,36 @@
+<div class="container">
+  <h4>Using property & Event Binding - Component to View & View to Component</h4>
+  <label>Please enter </label>
+  <input type="text" [value]="userName" (input)="userName=$event.target.value">
+  <p> You have entered <span class="text-highlight"> {{ userName }} </span></p>
+  <button class="btn btn-primary" (click)="clearName()">Clear</button>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4> Two-way binding : () + [] ---> ([ ])</h4>
+  <label>Please enter </label>
+  <input type="text" name="userNameOne" [(ngModel)]="userNameOne">
+  <p> You have entered <span class="text-highlight"> {{ userNameOne }} </span></p>
+  <button class="btn btn-primary" (click)="clearNameOne()">Clear</button>
+</div>
+
+<hr>
+
+<div class="container">
+  <h4>ngModelChange with ngModel</h4>
+  <label>Please enter </label>
+  <input type="text" name="userNameTwo" [(ngModel)]="userNameTwo" (ngModelChange)="userNameTwoChanged($event)">
+  <p> You have entered <span class="text-highlight"> {{ userNameTwo }} </span></p>
+</div>
+
+<hr>
+
+<div class="container" style="border:1px solid black;">
+  <h4>Custom Two-way binding - parent and child Component communication</h4>
+  <p style="text-align:right">Parent Component</p>
+  <app-counter [(count)]="count"></app-counter>
+  <p> Current Count {{count}}</p>
+  <button class="btn btn-primary" style="margin: 10px;" (click)="clearCount()">Clear</button>
+</div>

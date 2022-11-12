@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: #cbc9c2; 
+}
+
+.text-highlight {
+    background-color: #FFFF00;
+}
+
+.red {
+    color: red;
+}
